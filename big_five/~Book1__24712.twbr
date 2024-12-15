@@ -1,0 +1,849 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource inline='true' name='Dropped_20241211T213857' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dropped_20241211T213857' name='Dropped_20241211T213857leaf'>
+            <connection class='textscan' directory='C:/Users/arsha/Documents/My Tableau Repository/Datasources' filename='Dropped_20241211T213857.txt' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Dropped_20241211T213857leaf' name='Dropped_20241211T213857#txt' table='[Dropped_20241211T213857#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB'>
+            <column datatype='string' name='Afghanista' ordinal='0' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Dropped_20241211T213857#txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Afghanista</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Afghanista]</local-name>
+            <parent-name>[Dropped_20241211T213857#txt]</parent-name>
+            <remote-alias>Afghanista</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Dropped_20241211T213857]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Dropped_20241211T213857' datatype='table' name='[__tableau_internal_object_id__].[Dropped_20241211T213857]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ireland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Dropped_20241211T213857' id='Dropped_20241211T213857'>
+            <properties context=''>
+              <relation connection='Dropped_20241211T213857leaf' name='Dropped_20241211T213857#txt' table='[Dropped_20241211T213857#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB'>
+                  <column datatype='string' name='Afghanista' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='country_personality_clusters' inline='true' name='federated.101pdq60xveze51ggokxf0agcvon' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_personality_clusters' name='textscan.0cf3di00qa8vrc1bbeekw1xyxf2m'>
+            <connection class='textscan' directory='C:/Data_Vis/Final Project/big_five' filename='country_personality_clusters.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0cf3di00qa8vrc1bbeekw1xyxf2m' name='country_personality_clusters.csv' table='[country_personality_clusters#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='real' name='agreeable_score' ordinal='1' />
+            <column datatype='real' name='extraversion_score' ordinal='2' />
+            <column datatype='real' name='openness_score' ordinal='3' />
+            <column datatype='real' name='conscientiousness_score' ordinal='4' />
+            <column datatype='real' name='neuroticism_score' ordinal='5' />
+            <column datatype='integer' name='entries_count' ordinal='6' />
+            <column datatype='integer' name='Cluster' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agreeable_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[agreeable_score]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>agreeable_score</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extraversion_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[extraversion_score]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>extraversion_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>openness_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[openness_score]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>openness_score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conscientiousness_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conscientiousness_score]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>conscientiousness_score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neuroticism_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[neuroticism_score]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>neuroticism_score</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>entries_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[entries_count]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>entries_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cluster]</local-name>
+            <parent-name>[country_personality_clusters.csv]</parent-name>
+            <remote-alias>Cluster</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='country_personality_clusters.csv' datatype='table' name='[__tableau_internal_object_id__].[country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C]' role='measure' type='quantitative' />
+      <column caption='Agreeable Score' datatype='real' name='[agreeable_score]' role='measure' type='quantitative' />
+      <column caption='Conscientiousness Score' datatype='real' name='[conscientiousness_score]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Entries Count' datatype='integer' name='[entries_count]' role='measure' type='quantitative' />
+      <column caption='Extraversion Score' datatype='real' name='[extraversion_score]' role='measure' type='quantitative' />
+      <column caption='Neuroticism Score' datatype='real' name='[neuroticism_score]' role='measure' type='quantitative' />
+      <column caption='Openness Score' datatype='real' name='[openness_score]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ireland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='country_personality_clusters.csv' id='country_personality_clusters.csv_65BABB82C2E841DCA5B45445F02D795C'>
+            <properties context=''>
+              <relation connection='textscan.0cf3di00qa8vrc1bbeekw1xyxf2m' name='country_personality_clusters.csv' table='[country_personality_clusters#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='real' name='agreeable_score' ordinal='1' />
+                  <column datatype='real' name='extraversion_score' ordinal='2' />
+                  <column datatype='real' name='openness_score' ordinal='3' />
+                  <column datatype='real' name='conscientiousness_score' ordinal='4' />
+                  <column datatype='real' name='neuroticism_score' ordinal='5' />
+                  <column datatype='integer' name='entries_count' ordinal='6' />
+                  <column datatype='integer' name='Cluster' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='country_personality_averages' inline='true' name='federated.03qmy130wdeuu91dzpp3r1vedr8l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_personality_averages' name='textscan.1kcdv1a029sk4c1dx6vhx1lgqf9m'>
+            <connection class='textscan' directory='C:/Data_Vis/Final Project/big_five' filename='country_personality_averages.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1kcdv1a029sk4c1dx6vhx1lgqf9m' name='country_personality_averages.csv' table='[country_personality_averages#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='real' name='agreeable_score' ordinal='1' />
+            <column datatype='real' name='extraversion_score' ordinal='2' />
+            <column datatype='real' name='openness_score' ordinal='3' />
+            <column datatype='real' name='conscientiousness_score' ordinal='4' />
+            <column datatype='real' name='neuroticism_score' ordinal='5' />
+            <column datatype='integer' name='entries_count' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agreeable_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[agreeable_score]</local-name>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias>agreeable_score</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extraversion_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[extraversion_score]</local-name>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias>extraversion_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>openness_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[openness_score]</local-name>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias>openness_score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conscientiousness_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conscientiousness_score]</local-name>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias>conscientiousness_score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neuroticism_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[neuroticism_score]</local-name>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias>neuroticism_score</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>entries_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[entries_count]</local-name>
+            <parent-name>[country_personality_averages.csv]</parent-name>
+            <remote-alias>entries_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='country_personality_averages.csv' datatype='table' name='[__tableau_internal_object_id__].[country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D]' role='measure' type='quantitative' />
+      <column caption='Agreeable Score' datatype='real' name='[agreeable_score]' role='measure' type='quantitative' />
+      <column caption='Conscientiousness Score' datatype='real' name='[conscientiousness_score]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Entries Count' datatype='integer' name='[entries_count]' role='measure' type='quantitative' />
+      <column caption='Extraversion Score' datatype='real' name='[extraversion_score]' role='measure' type='quantitative' />
+      <column caption='Neuroticism Score' datatype='real' name='[neuroticism_score]' role='measure' type='quantitative' />
+      <column caption='Openness Score' datatype='real' name='[openness_score]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ireland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='country_personality_averages.csv' id='country_personality_averages.csv_44DCE89FCDAB4D568E5549D7EB742D6D'>
+            <properties context=''>
+              <relation connection='textscan.1kcdv1a029sk4c1dx6vhx1lgqf9m' name='country_personality_averages.csv' table='[country_personality_averages#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='real' name='agreeable_score' ordinal='1' />
+                  <column datatype='real' name='extraversion_score' ordinal='2' />
+                  <column datatype='real' name='openness_score' ordinal='3' />
+                  <column datatype='real' name='conscientiousness_score' ordinal='4' />
+                  <column datatype='real' name='neuroticism_score' ordinal='5' />
+                  <column datatype='integer' name='entries_count' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_personality_averages' name='federated.03qmy130wdeuu91dzpp3r1vedr8l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qmy130wdeuu91dzpp3r1vedr8l'>
+            <column caption='Agreeable Score' datatype='real' name='[agreeable_score]' role='measure' type='quantitative' />
+            <column-instance column='[agreeable_score]' derivation='Attribute' name='[attr:agreeable_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[conscientiousness_score]' derivation='Attribute' name='[attr:conscientiousness_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[extraversion_score]' derivation='Attribute' name='[attr:extraversion_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[neuroticism_score]' derivation='Attribute' name='[attr:neuroticism_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[openness_score]' derivation='Attribute' name='[attr:openness_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Conscientiousness Score' datatype='real' name='[conscientiousness_score]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Extraversion Score' datatype='real' name='[extraversion_score]' role='measure' type='quantitative' />
+            <column caption='Neuroticism Score' datatype='real' name='[neuroticism_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Openness Score' datatype='real' name='[openness_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03qmy130wdeuu91dzpp3r1vedr8l].[attr:agreeable_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03qmy130wdeuu91dzpp3r1vedr8l].[attr:conscientiousness_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03qmy130wdeuu91dzpp3r1vedr8l].[attr:extraversion_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03qmy130wdeuu91dzpp3r1vedr8l].[attr:neuroticism_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03qmy130wdeuu91dzpp3r1vedr8l].[attr:openness_score:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Iceland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;USA&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.03qmy130wdeuu91dzpp3r1vedr8l].[none:country:nk]</column>
+            <column>[federated.03qmy130wdeuu91dzpp3r1vedr8l].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[attr:openness_score:qk]' field-type='quantitative' max-size='1' min-size='0.228169' type='rangesize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.appsfortableau.extensions.show-me-more-share' extension-url='https://extensions-appsfortableau.infotopics.com/smm-radar/' extension-version='0.1.0' instance-id='C547C95F900F4DE0B172AB686A049018'>
+              <instance-settings>
+                <setting key='averageColor' value='&quot;#ddddd&quot;' />
+                <setting key='backgroundColor' value='#FFFFFF' />
+                <setting key='colorScheme' value='[&quot;#4e79a7&quot;,&quot;#a0cbe8&quot;,&quot;#f28e2b&quot;,&quot;#ffbe7d&quot;,&quot;#59a14f&quot;,&quot;#8cd17d&quot;,&quot;#b6992d&quot;,&quot;#f1ce63&quot;,&quot;#499894&quot;,&quot;#86bcb6&quot;,&quot;#e15759&quot;,&quot;#ff9d9a&quot;,&quot;#79706e&quot;,&quot;#bab0ac&quot;,&quot;#d37295&quot;,&quot;#fabfd2&quot;,&quot;#b07aa1&quot;,&quot;#d4a6c8&quot;,&quot;#9d7660&quot;,&quot;#d7b5a6&quot;]' />
+                <setting key='convertedToNewActions' value='true' />
+                <setting key='dashboardActions' value='[]' />
+                <setting key='dimensionColors' value='[{&quot;fieldName&quot;:&quot;Country&quot;,&quot;color&quot;:&quot;#4e79a7&quot;},{&quot;fieldName&quot;:&quot;Measure Names&quot;,&quot;color&quot;:&quot;#a0cbe8&quot;}]' />
+                <setting key='dimensions' value='[&quot;Country&quot;,&quot;Measure Names&quot;]' />
+                <setting key='divergingColorScheme' value='[null,null,null,[&quot;#d8b365&quot;,&quot;#f5f5f5&quot;,&quot;#5ab4ac&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#f5f5f5&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;]]' />
+                <setting key='enableAnalytics' value='false' />
+                <setting key='enableAnalyticsDrillDepth' value='false' />
+                <setting key='enableAnalyticsDrillDirection' value='false' />
+                <setting key='enableLegend' value='true' />
+                <setting key='enableValueStoreParameter' value='false' />
+                <setting key='enableValueStoreSettings' value='false' />
+                <setting key='excludeValues' value='false' />
+                <setting key='extraSettings' value='[&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;10&quot;,10,10,20,&quot;6&quot;,2,&quot;39&quot;,&quot;60&quot;,&quot;1&quot;,&quot;1&quot;,&quot;#666666&quot;,&quot;#333333&quot;,&quot;#333333&quot;,&quot;#eeeeee&quot;,&quot;#eeeeee&quot;]' />
+                <setting key='filterDimension' value='[]' />
+                <setting key='filterMode' value='false' />
+                <setting key='filterSheets' value='[]' />
+                <setting key='fontSize' value='1.3' />
+                <setting key='fontSizeG' value='1.5' />
+                <setting key='fontSizeLabels' value='1' />
+                <setting key='inputColor' value='#53A9CB' />
+                <setting key='labels' value='' />
+                <setting key='legendColumns' value='1' />
+                <setting key='legendPaddingX' value='0' />
+                <setting key='legendPaddingY' value='0' />
+                <setting key='legendPosition' value='&quot;top-left&quot;' />
+                <setting key='legendRows' value='2' />
+                <setting key='legendTitle' value='&quot;&quot;' />
+                <setting key='legendType' value='&quot;color&quot;' />
+                <setting key='levelColorsArray' value='[]' />
+                <setting key='linkColor' value='#999999' />
+                <setting key='localViewParameter' value='false' />
+                <setting key='measure' value='Measure Values' />
+                <setting key='measureFormat' value='' />
+                <setting key='measureStyle' value='{&quot;style&quot;:&quot;decimal&quot;,&quot;maximumFractionDigits&quot;:0,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;unit&quot;:&quot;&quot;,&quot;displayUnits&quot;:&quot;none&quot;,&quot;useGrouping&quot;:true}' />
+                <setting key='memberColors' value='[{&quot;fieldName&quot;:&quot;Ireland&quot;,&quot;color&quot;:&quot;#0ee81c&quot;},{&quot;fieldName&quot;:&quot;India&quot;,&quot;color&quot;:&quot;#f20000&quot;},{&quot;fieldName&quot;:&quot;USA&quot;,&quot;color&quot;:&quot;#f28e2b&quot;},{&quot;fieldName&quot;:&quot;Japan&quot;,&quot;color&quot;:&quot;#ffbe7d&quot;}]' />
+                <setting key='memberColorsSunburst' value='[]' />
+                <setting key='outputColor' value='#CCFF66' />
+                <setting key='scaleLegendColor' value='&quot;#4e79a7&quot;' />
+                <setting key='scaleLegendItems' value='3' />
+                <setting key='scaleLegendOrder' value='&quot;high-low&quot;' />
+                <setting key='selectedSheet' value='Sheet 1' />
+                <setting key='selectedViz' value='radar-chart' />
+                <setting key='sequentialColorScheme' value='[null,null,null,[&quot;#d8b365&quot;,&quot;#f5f5f5&quot;,&quot;#5ab4ac&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#f5f5f5&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;]]' />
+                <setting key='slotAliases' value='{}' />
+                <setting key='sourceColor' value='#e72168' />
+                <setting key='targetColor' value='#183C92' />
+                <setting key='textColor' value='#FFFFFF' />
+                <setting key='textColorAxis' value='#666666' />
+                <setting key='textColorGrid' value='#666666' />
+                <setting key='textColorHeader' value='#666666' />
+                <setting key='textColorLinks' value='#FFFFFF' />
+                <setting key='tooltips' value='{&quot;node&quot;:&quot;&lt;DimensionName&gt;: &lt;DimensionValue&gt;\n&lt;AxisName&gt;: &lt;AxisValue&gt;\n&lt;MeasureName&gt;: &lt;MeasureValue&gt;&quot;}' />
+                <setting key='useNewColorFormat' value='true' />
+                <setting key='valueColors' value='[{&quot;fieldName&quot;:&quot;Measure Names - Openness Score&quot;,&quot;color&quot;:&quot;#a0cbe8&quot;},{&quot;fieldName&quot;:&quot;Measure Names - Neuroticism Score&quot;,&quot;color&quot;:&quot;#f28e2b&quot;},{&quot;fieldName&quot;:&quot;Measure Names - Extraversion Score&quot;,&quot;color&quot;:&quot;#ffbe7d&quot;},{&quot;fieldName&quot;:&quot;Measure Names - Conscientiousness Score&quot;,&quot;color&quot;:&quot;#59a14f&quot;},{&quot;fieldName&quot;:&quot;Measure Names - Agreeable Score&quot;,&quot;color&quot;:&quot;#8cd17d&quot;},{&quot;fieldName&quot;:&quot;Country - Ireland&quot;,&quot;color&quot;:&quot;#b6992d&quot;},{&quot;fieldName&quot;:&quot;Country - India&quot;,&quot;color&quot;:&quot;#f1ce63&quot;},{&quot;fieldName&quot;:&quot;Country - USA&quot;,&quot;color&quot;:&quot;#f1ce63&quot;},{&quot;fieldName&quot;:&quot;Country - Japan&quot;,&quot;color&quot;:&quot;#499894&quot;}]' />
+                <setting key='vennSetNumber' value='' />
+              </instance-settings>
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[none:country:nk]' />
+              <_.fcp.VizExtensions.true...custom column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[none:country:nk]' custom-type-name='smm-radar+dimensions' />
+              <_.fcp.VizExtensions.false...lod column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[:Measure Names]' />
+              <_.fcp.VizExtensions.true...custom column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[:Measure Names]' custom-type-name='smm-radar+xAxis' />
+              <_.fcp.VizExtensions.false...lod column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[Multiple Values]' />
+              <_.fcp.VizExtensions.true...custom column='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[Multiple Values]' custom-type-name='smm-radar+measures' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.9538148045539856' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7EECA87B-7870-44F8-806E-2FEB74E1959F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Dropped_20241211T213857' />
+          </datasources>
+          <datasource-dependencies datasource='Dropped_20241211T213857'>
+            <column datatype='string' name='[Afghanista]' role='dimension' type='nominal' />
+            <column-instance column='[Afghanista]' derivation='None' name='[none:Afghanista:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.appsfortableau.extensions.show-me-more-share' extension-url='https://extensions-appsfortableau.infotopics.com/smm-radar/' extension-version='0.1.0' instance-id='2747E1A85FC84BEC8F168B941CA8C017'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <lod column='[Dropped_20241211T213857].[none:Afghanista:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8D9E86ED-113E-48C6-850A-180F1F3BBD2F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_personality_clusters' name='federated.101pdq60xveze51ggokxf0agcvon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.101pdq60xveze51ggokxf0agcvon'>
+            <column datatype='integer' name='[Cluster]' role='measure' type='quantitative' />
+            <column caption='Agreeable Score' datatype='real' name='[agreeable_score]' role='measure' type='quantitative' />
+            <column caption='Conscientiousness Score' datatype='real' name='[conscientiousness_score]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Extraversion Score' datatype='real' name='[extraversion_score]' role='measure' type='quantitative' />
+            <column caption='Neuroticism Score' datatype='real' name='[neuroticism_score]' role='measure' type='quantitative' />
+            <column-instance column='[Cluster]' derivation='None' name='[none:Cluster:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[agreeable_score]' derivation='None' name='[none:agreeable_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[conscientiousness_score]' derivation='None' name='[none:conscientiousness_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[extraversion_score]' derivation='None' name='[none:extraversion_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[neuroticism_score]' derivation='None' name='[none:neuroticism_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[openness_score]' derivation='None' name='[none:openness_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Openness Score' datatype='real' name='[openness_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.101pdq60xveze51ggokxf0agcvon].[none:agreeable_score:qk]' field-type='quantitative' max='64.655364382683871' min='24.321972847640154' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.101pdq60xveze51ggokxf0agcvon].[none:Cluster:qk]' symmetric='false' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#0a05ad</color>
+                <color>#1c18b1</color>
+                <color>#302cb6</color>
+                <color>#4542bb</color>
+                <color>#5b58c0</color>
+                <color>#7270c5</color>
+                <color>#8a88ca</color>
+                <color>#a3a2cf</color>
+                <color>#bdbdd4</color>
+                <color>#d9d9d9</color>
+                <color>#c7d4ce</color>
+                <color>#b6cfc4</color>
+                <color>#a6cabb</color>
+                <color>#96c5b1</color>
+                <color>#87c0a8</color>
+                <color>#79bb9f</color>
+                <color>#6bb696</color>
+                <color>#5db18e</color>
+                <color>#51ac86</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.101pdq60xveze51ggokxf0agcvon].[none:Cluster:qk]' />
+              <lod column='[federated.101pdq60xveze51ggokxf0agcvon].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.101pdq60xveze51ggokxf0agcvon].[none:conscientiousness_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.101pdq60xveze51ggokxf0agcvon].[none:Cluster:qk]' />
+              <lod column='[federated.101pdq60xveze51ggokxf0agcvon].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.101pdq60xveze51ggokxf0agcvon].[none:openness_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.101pdq60xveze51ggokxf0agcvon].[none:Cluster:qk]' />
+              <lod column='[federated.101pdq60xveze51ggokxf0agcvon].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.101pdq60xveze51ggokxf0agcvon].[none:neuroticism_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.101pdq60xveze51ggokxf0agcvon].[none:Cluster:qk]' />
+              <lod column='[federated.101pdq60xveze51ggokxf0agcvon].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.101pdq60xveze51ggokxf0agcvon].[none:extraversion_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.101pdq60xveze51ggokxf0agcvon].[none:Cluster:qk]' />
+              <lod column='[federated.101pdq60xveze51ggokxf0agcvon].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.101pdq60xveze51ggokxf0agcvon].[none:agreeable_score:qk]</rows>
+        <cols>([federated.101pdq60xveze51ggokxf0agcvon].[none:conscientiousness_score:qk] + ([federated.101pdq60xveze51ggokxf0agcvon].[none:openness_score:qk] + ([federated.101pdq60xveze51ggokxf0agcvon].[none:neuroticism_score:qk] + [federated.101pdq60xveze51ggokxf0agcvon].[none:extraversion_score:qk])))</cols>
+      </table>
+      <simple-id uuid='{707D5436-294E-47F0-B662-89804DDCC786}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card param='[federated.03qmy130wdeuu91dzpp3r1vedr8l].[none:country:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3A49B08D-DC41-489C-9689-E02157298710}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F670D306-E9BC-4BB2-8942-A7EBCD4A62A0}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='10' param='[federated.101pdq60xveze51ggokxf0agcvon].[none:Cluster:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{878C69C6-750F-4CEA-9DFA-769C08215AD4}' />
+    </window>
+  </windows>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='0.1.0' id='com.appsfortableau.extensions.show-me-more-share'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Radar Chart</description>
+          <author email='support@appsfortableau.com' name='Infotopics | AppsforTableau' organization='Infotopics | AppsforTableau' website='https://appsfortableau.infotopics.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://extensions-appsfortableau.infotopics.com/smm-radar/</url>
+          </source-location>
+          <icon>iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAYAAACHjumMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAGOxJREFUeNrsnWuMJNV1x2/3dE93z2NnhtnFC6wssAJKiBSvExlDrJAlDlEirBhESBSULLtSpNhxlM1DQbJjC1BikIwSGxspJFKysFL8IX4AESgfAHvlKA42Udh8CCCwYGUtsK/ZeXTP9Hsm99T07M729KOqum71vdW/n9Q0s9NT3X3q1r/OOffcc5UCAAAAAACAFikTB93Y2LhWP8ljv37MYmYAq1nSjxP6cTKVSp20UmC0qNypnz6lHwda4gIA7iECc1w/ntVi88xQBablqRzSjyN4KgCJ9Gwe04+varFZik1gtLCImPwpwgIwOkKjReZB4wKjxUVCoKOEQQAjGT7dpYXmhN8/SAcUF1Gw7yEuACOJXPevah04FLkHow8qXsshbAwAmie1J3M4EoFBXAAgjMj0DZEQFwDowqFW2iScB9OKtY5iRwDowV3damZSPcTlWv30qmIaGgB6I9PY13WqlekVIh1FXADAB7PdIp10F+9Fyv4PYDcA8MmdrRq5/iGSfuE7iloXAAjGcR0m3dbTg2mpEOICAEE5oPVjf78Q6Qh2AoCQHOkZImkF2sBGABCSJR0mzXX0YFrJXQCAsMxuT/Zm2n65P+p3q1QbqlxrYPYtRU+l1PTEuEqnUxgDkooIzPFOAvPLUYvLe+eLmLuN4lpV7btyF4aApPLhjiGSinj2aLlUwdQdqNWbnvgCJDVMikVg1skXA4xqiNRRYAAAIgOBAQAEBgAQGAAABAYAEBgAQGC6HDxFtSoAAmOIqckcFu5k9HRKjWfHMAQknstcDBMrqVcrdVVarVJ01yIzllZzuwreM0BihSW1Gb4YFxgAGF2B4TYKAObSAZgAABAYAHCOjOk3KK7VVGmtiqW3FF2HppLkZRYJRgGjSV4Rl3OLq1i5XWTSKfXBD8zQ1Q6SKyxxJHnXyjUs3YH19Q2v6RRA4m+mRi8kZr0BEBgAAAQGABAYAAAEBgAQGABAYAAA4hMYGk4BIDDGmJnKY+EOyDKBfC6DISDxGO8H02iue0sG4JJXNz0xzjIBSLaw0HAKAEwLDEleADDnsWMCAEBgAMA5jE9lLCyveUleaVEAm7sKzM9OqMl8FmMAHswgLJeq3gNxuYTMqp1ZKHnPAAjMAKxVmJ7uKjQNBAYQGAAABAYAEBgAQGAAABAYAEBgAACBAQBwRWCkahW6GJ52DYDADIbswcyFtBPpB8Pe1DAKGO8HwzapOz0XxAUSLyw0nAIA0wJDkgQAzHnsmAAAEBgAcA6jDackwXvmQkmVqw0svY35mQk1M5XDEIAHMwiLxTLi0gHp8kfDKUBgBoTp6e7QcAoQGAAABAYAEBgAQGAAABAYAEBgAACBAQBwR2BoS9CdTAZtBwRmIOamC4hMJ7vsKtDtD0YC+sEAQPTCQj8YAHA6RAIABAYAwAgZ029A0+82RafpNyAw0SA9T06dXfFEBi4h25bsmZvEEECINAiLK2XEpQPFtRpeHSAwUXgw0D10BEBgAAAQGABAYAAAgQEAQGAAAIEBAAQGAMANgZnIj2PhLtBwCkZinJs8uOy/3Gg2vcpVCstaBh9Lq/nZCRpOwUhAwykAiF5YaDgFAKZBYAAAgQEABAYAAIEBAAQGABAYCMvGShkjAAIDZrhw79+ppT98AqEBBAaipfjX31T1106pygv/q85/8kuq9sM3MQokCip5h0RVi8qi9lzamTrySf24AwOB28LSquRFYIZA89SCWtAey3qXsGj85hvU3BOfVqldBYwFTgsMIdIQWL7/WFdxEWovv6nO3fpXhEzgPAhMzJQee94TkH6IAEmOBgCBAV+IR1J67Dl/J0aHR7M6TAJAYKAvMg291CGp242ZR+9TY/vmMRwgMNCfxU8/0TPvsp3Jw7+icrd/GKMBAgP98Zt3EbI37lPTX7wHowECA/0JmneZ+fJ9GA0QGOhP0LyLeC4Z7cEAJIVYCu0azXW1XKqoWr05UsaVgrrmqQubhv7xeyrzH6+r9Ktvd3xt4e5b1MyjBxmRlvDGUk396FxVPyrq3dWmel3/LPzqNQX1yEfn1XTW371Zmt2fuVBS5WrD+3k8O6ayY2mVz2VVIZfxfk6ksMRVybtYrKhFFvJdJPPv/6PGH/7WZf8meZcrvvHnVO4OkWJ9Xb34btkTlJf084r+uRs/Mzuunr59r6/jnjq70vPGmk6n1GQ+6wmOPMvPSRIYo9uWLJeqiEu7N/cbP69UqazGv/b85gBr5V0Ql+EgXsrTJ0t9RWU74s2Ih/PTs733/RJh6ee1i4cj2/rIY6ElNtMTOS04mUTY19i3EMMtFhGXjiJzz8dV9l9/oFKnF8m7DMlbefrkqnrqraIOfxqhjrFS3/B1DQS9ZrbERvbNmtM3Hde9GmMCU641LjOwxJp756cCbzj2/vmiF79+6Jq5gT7P2+8uejHvVbunQx+joj/He/rzyImfm853fI0kdaX9wmWh5945VX3499T69Vddys/80o1qen3dy71AfMIionLszaJvb2VoN6Hmujq3uOp5NTNTeTUzmXNSaIwJTLtrKEZK+m6Ga0e/u0NcvHhUeyrjX39eVb72B5cMf9NPqV0U08XGMS0sj//fsvXC0jESWCl7kyRz0wVvt1QEpgPZhItL47VTaiXA4sTcr+1XqS5eEESbY/ncKwuhQyGbhGZheU2HT1W1e2bCmRxNhiE4OFLvIksBwK5wSDwWCYmShEQGEqaLJyMeje1hEwITAct/+ZRX8wJ2IDM8n/3Beee9lp5jrlRVq+W6l9e0uZaGSt4B6ZZ3geEguZY7XzidaHG5GJY31706GxEbPJgknuCAeRcwGxI9fGLRm34eNSQ3U6s31PzMhHUhEwITkqB5F2m/UMFsxsTl4PGzF8v5R9IGazVVrTfV1bunrRIZQqSQiOfiN++S1+IiPV4AcTHJVgI4aIEfAmMZ1e+8rMrf/i9fr5WudNKdDhCXURSZ2EIkmb+X6t6g1BubhVGyaHJQ5FiDHKfRaKr0W++rjb99Vvl2QrW4LKVSqrFW3XEsQFxMiowN4VKMAjPYQIhi0aRk3Qc5TqpUUblHvuU9+zrRf3KHauzbreOpcsfPAohL0kUmNoGRDHcuxHz9eS9Dvpm8GgQxttQLSBVk6IH96NOqqT0YP0jeZfYzv34prNLfQbL9WyS1D0gcfPY/zyMuPkVGetFcNeC144TAiLiEKW8ea6lvr7+VZKufDvxyrLAl1pJzaf7bK75e67Vg0KFRqsd7pdOkv8LwyIlFr2cL+By31YZ3Y5sf4MY6CM6Pctnj+dytX1AX7v2KsZ0Qpd4lyCZos//Atq8mkJ4tSSv9jwMpxBs0RTGSAiO1KFKm77mDL7+pLvzuV/TPxyIt2/fe4/6nfG85IpvXj3/sBkZ1xEhlrixahHCIFzOMvJ/TAtNpryEJZcSjEY9jI4LEsNS71LUH4wfZtH7qyB2MZgN87pULzrVasAmZtpb+MgiMT2QNUK+9hlb172UDedmTaJDwy2+9i+Rd5tjq1Qiyvoi8y+BIPibudUtOCozfNUDi3cieROLRSLPtIEiYtRV++YG8i7nQSNouQERef7Eca6jknMBs5USCioV08h/7o3/0nQheCrDVK3kXczz+2jKhUcShUpyN+J0TmCA5kR3G/e8fe4lg6ZvbKxFcJO9iBZsd/1cxRMTIjFKlGk87C6cEJkhOpBeV1tS2zDi1J4LlPSR/48t45F3Mei+ERkZDJQSmLcwJkhPxw+aM02YiWISGvItd3ovNid03fFQSVy3eyVQSvnF4Mc70g1m+/5jvnEigsKmVCBaxEY/E73tI+wXyLuY49taKtZ/tmslM303XvIsrk/Z20rB13ZnsVJDPTSEw2aMv9ZySjspD8nu/ka1eZcM0MIPMHMk2rraxK5tWf/yzM+rg9f7W9simaZN7ZzZ3ONUhiU19WoTVSt0TP5PbCVnfrqH5xrsq+88v+XrtxlRebVx/ddcN5qNA3qP+yMHAbR/a2zPQrqGX92LfcgDZj/rxX9zteS9BkR0AJgtZdXqh1Hcr2WF4MSbXKVndrkHaIuR1aOSX2ud/y9sxcezVd1T26895vVuixnuPK6bU2oDhGu0aumPbzJGIy7EDV6rpbPg7vXgJ0hFAVvXbJDJyXSZCYMK0a/DaI5xe9PXa/H23qdm7Prb5w+0/5z02nnvFS+BGtTYpfe+tm1u+Tox7G5QHgXYN/giyCX1cYdGg4nJx/KRTnsj85MyyNeGSfA4JlSScc1pggrZrkOliv+0RJCcy+8Bv7/zF3beo/O37vWnn4j+96LtRVLf3mPziPaqk70CZzNjAO+vRrqEzL763ZtXneeSj85GIy3aR2TM3qc7ocMkW1so1YwJj5SgPMl3s9V75cveetzKNLIVwlW/er9bv+IVwRtLHmKXeJTYPxhZu2pNXn7gm+jIEuZgLFm39Kh6MKawUmCBT0lKmn9HeRT8kOZt64HfUnu//jddtLgjSPMpPQysYDKktsSk8khkjY6HXlD37kkuYZCovZN00teRM/E5Ji1BMBNwORIRCCuRkTZKf95J6l1xAQYKw4ZE93ovMFt20p3+eTbxtCee3dveUMSnjpd8NSbwYCZdsycWIF2MiL2iVwMgqaSl68x0aDbAdiBTJXfGNG7wCu26JYOpd4uVHZ+3ZAtWPuMjYkXVr271tuWGl9RiWcVO4+5a+IjOsTnPtVKo6TJqO3quyJkQKulNiVGX6MggkbJJQK73teORdhhMi2eTB9LsZylq2TqH8utdp8Zj3mp5394w9M4mmljVYIzBBdko0UaYvieA93//SxR0Y5Q5E3iU+pHrXpvyLJHh7h/L9Pe1+i2ZtKlWQUM1EbZYVIVKQVdImwxbxiOTYktdBXGIWmDW3Kpv99BWqvnBC//dg19+PpezaqL7RiH7ZwNA9mCinpKMCcYkf11pi+pnlXF8pO/WdwizlsV5gTExJg3sUayydGH6YFP05GKrAmJ6SBnd4famOEYYd9hlI9A5NYIJMSUuR3CBT0gAwHIbSriFVLKt6gCnp2sO/r5YkIVYcLE6vN9YDt1m4TBRbLRakZmAx5N92+3nUYVuS4VM20OFuKO0apMN/xueUdOOej6vmR66LpBO6TMNFcRw5EYOeDNo1AB5MhGy1a5CS6orPPYpkSrrxF7+pXY+mt8x9EKQPh9Qd7B6g98VWywXaNQBYJjAiLtlzy2rlC//i6/VbU9K19GatQD6C1adj+lhRHId2DdEjhW2EScPFxArvWEc5U9LQjc/vn/WaO8FwkIWXJjrbxebByIxRgylp6IJ06X/pjqu9dpk2LBm4ZsJ8CCu7DsxZsO1NOpXywv50OvrK4tgEpvbDt3y5S4OukgZ3kc5xfjv2JyI/MaYFZjqf6O9onU/KZmYACIwR2MwMAIExAs2dABAYMx8iplXSAJBQgdno0eSYKWkABCYQ7ZWq9cOfUBt753a8bhSmpKVb2Pnly/f7SVvWbAjABJeN8g1NlBeVTTvY2cYH984Y3XQczHL6Q5/x9bq9b//9aApLavMOamyES9HO3DTTzZ2QzdARFxgFMqYvpEazqZZLVSzdQiomTW427iKyCNS2MSKLa/OGd1+sVBveIlzbbn5Rjk/jlbzyYWXlsfSDMbV7nBNKrj0WsUM+l1FwOaM8LpJ+LmIZ7ZLw5a4NMHqQCAAABAYAEBiAwORzWYxgCVF3WkRgAOCSIKQTtrMjABAiAYwUzT5F7eM3928r4uc1CAzACNKvHqRw9819j9HvNSb2gkZgANqwcdlEv43xCnff4j3C/t7PeyThXFBWCkMna6HA+NlYb+bRgzoMul6tHf2uqr92avO73LjP6w7QT1z8vofr58LYamoAv9i4JkcwuR5JQrBTZ1cS+52Nr6YG8B2np+3sjSPr50yxXKqMxLmINUSS3jCS2NqeQJPCnsJ4xtpBBuaxdRtd2U/dxAJV8di279We5HMRm8AsFiueandqQCXiMjOVT/weMeAeZxdX1b4rd0V2A+zU3TDR3mkcXovEmosr5a7d7eTf5ffvWxiHQzzY2oCr0VxX57TIRIUcy9b2FCbOgfGzulgs+zaoZNUXRkjd4RLZjL3pwNVKXZ1ZKA3U/lX+Vo4hxxqlc2D0rIr6B+1UJq+Xv4PRwvYm6CIM4olXQkwty9/I39osLqbOgVGBCZvIWi3XueJGjPFx+0uy5MYn0+kSyvsRGnmNhETyNy7cNE2cA6NntRayFFr6+AIejK1IKF+uFr2cRS47tuPClHFfrTed88RNnAOjArMesm6PHq2jR87Sqep+Ho08bA99hnkOKLQDK8hkGIpJPAecVbBjcLNPVCLPAWcVrKHAli6Jsz0CA3gxYMz2nFGwKAcwhhESZnsnfdLNAr6KN124NeO0NWU4URj3tmcFB9308YxaxAxDsz0CozYrfTstJ9g+ZSjiI30tWKHtFuNZPJik2d6pEKmbuLQjXo1UTw6ydgTiR24I5GGGEB5pm5u6GTtzNsU7CbIQUkRGFlqCW+TwYhJlc2cEJkwHMPF48GIcc9XHmapOks2dEZiwDZJZduAWBQQmUTZ3RmDCCkUVgXGKPMV2ibJ54s+mnwWXkt8RIdoSMVF0yaozCzUkl13bHs8zPlubZKRvFzKIJXHcHn5t1WJIPc3crgIzG3G77PqOisDEZ2uTjOyVI82wpMtYr9zO1msY7HG77FmMkBBbj6TAiGD4beQss1CnB+zHCsGYzCMwSbH1SAqM7GAQBG9pwmqV0Zgg1x3isfHICYx4ImE6kK2Wa4zIGJnIs54sCTYeOYEJm08hD4MHg42Dw1k0gLfwsrHZ8FmmulnEFxyxmczesYWNoQtf2zaOcYnARIhsj1tc3bmvk4iMJNPmZyaorQnAZCEbeF8t8G/bOKDAIwK2b4/b6Y4rv5cp75+cWSbUCoBsPA9u2xaBiQBpDeFHOERoXNmEy6YwCdwMjxCYCBDPJIhXIiITdJocVx5ctSkCMyClteA5grBb6uLKg2s2RWAGJGwbiUrIvyNMAlfCIwQG3LjjTuLFuGpLBAYccOmp6nXVlggMOOHWswBycMSGcYebCAw4wRRhkpM2RGCAuy9eIAIDMDOVxwiO2Q6BAWeQBCVruUJc5Npmw0qUIzDg1IWCFxPOexmWMCMw4JwXA+7YDIEBp5BkJSITTFyGmRxHYMA5ZCsZcMNWCAw46cXMTFEX0w+x0bCn9hEYcPPOPF1gRqnXha1tIzYa+ufgVICrFxAzSr28l7wVAozAgMNeTJ7q3m4hpCVLKzg74DTzsxMYoYNNbAkfERhwGllfwx5KlxBb2LTyHIEB59kzN0nCV23mpcQWVn0mhie4juQcbJgxGTZiA9tyUggMJAKp+RjlUEm+u421QQgMECoRGiEwAH5CJdmed9SQ72zrdD0CA4lCFveN0mJI278vAgOJDJXi3PtnWMh3tN1jQ2AgkVy9ezrR+Rj5bnvnp6z/jggMJPYCTKrIbH03F5ZJGP2E6VS4k5vPZTsaNQyFcao8RxUJIWydXRkECYtcCQGNCkwnofBDJ2UOKxSZTHrHoAs7WIP8e9jjQbRI2XySREa+i0tJbKMCM1kILjDiqXRaSzFRCG5UKT5qF6uwHdanJ3KB/r3foKe0PT7kfCdBZFwTF+MC45VwB2zZ162PhRg2aKVmt/Jx+UxBLnDxNrqdWKmeDOKNyPuyAnh4IuOisG8V0rk4/d4uMCejfgPp2eHXMPI6eX03PnDFlO+LWU5IvosgifD5HWzy2iv7vFZ+7yfh5omLxUVRoyAy+67c5dSSAvms8pkdE5fjW/9z2VWzsbHxPf10wMQ7FtdqanGlrBrN9a6ejh8jrq9vqOXVqlouVbz/73RC/CbBavWm95lWK/WuA1KO5UeI5LMsLK9537PbQHEpOZd05NwX16rec7nasE5UNr3mnKvj5ZlUKnVXJ4F5UD89YPrEbhcGuXjDGrHSNjAkoRvGO5DPI5+rPSwK6063f65BjgXxITe/RuPSDbAqY3Vjo/M4rjW6/m473SY6ZIY1t23cD3IdWMhDWmAe9K7Jtl+cMP3OURoxH5GrKyc3H6HbnKcBkpPIzWn7DYrzGHGI1PJiNrAPAIRkSXsvcxdv3h1e8CQ2AoCQPHNZdNDhBU9hIwAIyWPbf+iYedRR0jv66VpsBQABOK7Do9v6eTDCn2ErAAjIQ+3/0FFgtApJHHUcewGAT6T2ZYdmdC3O0GGShEiv6scstgOAHizpx3VaYJZ8eTAtL+YkoRIA+OBwJ3HpKTAtkXlSMW0NAN15qJVS6awhfo6gw6Wj+ukQtgSAbTypxeVwTyfF75EQGQAIIi59Q6S2cEkO9hB2BRh5DvsRl0AezDZP5oB+Em/mWuwMMFKc1I+7tLj4XhQduLdBa677Iy1vZgmbAyQeuc4lmXtdEHEJ5cG0eTPixRzSjyOKehmAJAqLrC36ardpaKMC0yY2d+qnT6nNjniETwDuhkESpTzba/o5doHp4NnIYz+eDYATnoqEPidbBbYAAPbz/wIMABBE7JU7v6QfAAAAAElFTkSuQmCC</icon>
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='smm-radar+dimensions'>
+            <display-name>Dimensions</display-name>
+            <data-spec>
+              <data-type>string</data-type>
+            </data-spec>
+            <encoding-icon token='level' />
+            <tooltip>Add dimensions to required to create radar chart</tooltip>
+          </encoding>
+          <encoding id='smm-radar+xAxis'>
+            <display-name>Spokes</display-name>
+            <data-spec>
+              <data-type>string</data-type>
+            </data-spec>
+            <fields max-count='1' />
+            <encoding-icon token='delta-up' />
+            <tooltip>X-Axis value</tooltip>
+          </encoding>
+          <encoding id='smm-radar+measures'>
+            <display-name>Measure</display-name>
+            <data-spec>
+              <data-type>numeric</data-type>
+            </data-spec>
+            <fields max-count='1' />
+            <encoding-icon token='metric' />
+            <tooltip>Value</tooltip>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Radar Chart</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 1' />
+        <referenced-view instances='1' viewId='Sheet 2' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
